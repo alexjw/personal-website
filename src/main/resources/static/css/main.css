@@ -1,0 +1,40 @@
+:root {
+    --main-bg-color: #CED3DC;
+    --main-font-color: #333333;
+    --main-container-bg: #F7F7F2;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    padding-top: 60px;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    /*border: solid 1px red;*/
+    height: calc(100vh - 60px);
+    overflow: auto;
+    padding-top: 20px;
+    background-color: var(--main-container-bg);
+    margin-bottom: 20px;
+}
+
+.container-title {
+    text-align: center;
+}
+
+p {
+    color: var(--main-font-color);
+}
+
+#welcome {
+    text-align: center;
+}
+
+#second {
+
+}
+
+h1, h2 {
+    font-family: "Times New Roman", Times, serif;
+}
