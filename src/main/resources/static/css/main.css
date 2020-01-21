@@ -1,13 +1,39 @@
 :root {
-    --main-bg-color: #CED3DC;
+    --main-bg-color: #550C18;
     --main-font-color: #333333;
     --main-container-bg: #F7F7F2;
+    --linkedin-color: #0e76a8;
+    --github-color: #333;
+    --codepen-color: black;
+    --glitch-color: #EF959C;
+    --salesforce-color: #1798c1;
+    --bitbucket-color: #205081;
+    --gradient1: #F7F7F2;
+    --gradient2: #96BDC6;
+    --gradient3: #B5D2CB;
+    --gradient4: #F4F1BB;
+    --gradient5: #BFD8BD;
+
+
+    --font-color1: #2A5547;
+    --font-color2: #2A5547;
+    --font-color3: #2A5547;
+    --font-color4: #2A5547;
+    --font-color5: #2A5547;
+
+
+    /*--gradient1: #F7F7F2;
+    --gradient2: #A1B0AB;
+    --gradient3: #929487;
+    --gradient4: #6B6054;
+    --gradient5: #252323;*/
 }
 
 body {
     background-color: var(--main-bg-color);
     padding-top: 60px;
     font-family: "Raleway", sans-serif;
+    color: var(--main-font-color);
 }
 
 .container {
@@ -15,8 +41,8 @@ body {
     height: calc(100vh - 60px);
     overflow: auto;
     padding-top: 20px;
-    background-color: var(--main-container-bg);
-    margin-bottom: 20px;
+    /*background-color: var(--main-container-bg);*/
+    /*margin-bottom: 20px;*/
 }
 
 .container-title {
@@ -24,17 +50,94 @@ body {
 }
 
 p {
-    color: var(--main-font-color);
+    /*color: var(--main-font-color);*/
 }
 
 #welcome {
     text-align: center;
 }
 
-#second {
-
-}
-
 h1, h2 {
     font-family: "Times New Roman", Times, serif;
+}
+
+#information i {
+    padding: 4px;
+    border-radius: 4px;
+    height: 60px;
+    width: 74px;
+    text-align:center;
+}
+
+#linkedInIcon {
+    border: 2px solid var(--linkedin-color);
+    color: var(--linkedin-color);
+}
+
+#gitHubIcon {
+    border: 2px solid var(--github-color);
+    color: var(--github-color);
+}
+
+#codePenIcon {
+    border: 2px solid var(--codepen-color);
+    color: var(--codepen-color);
+}
+
+#glitchIcon {
+    border: 2px solid var(--glitch-color);
+    color: var(--glitch-color);
+}
+
+#salesForceIcon {
+    border: 2px solid var(--salesforce-color);
+    color: var(--salesforce-color);
+}
+
+#bitBucketIcon {
+    border: 2px solid var(--bitbucket-color);
+    color: var(--bitbucket-color);
+}
+
+#social-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#welcome {
+    background: linear-gradient(0deg, var(--gradient2) 0%, var(--gradient1) 100%);
+    color: var(--font-color1);
+}
+
+#overview {
+    background: linear-gradient(0deg, var(--gradient3) 0%, var(--gradient2) 100%);
+    color: var(--font-color2);
+}
+
+#information {
+    background: linear-gradient(0deg, var(--gradient4) 0%, var(--gradient3) 100%);
+    color: var(--font-color3);
+}
+
+#skills {
+    background: linear-gradient(0deg, var(--gradient5) 0%, var(--gradient4) 100%);
+    color: var(--font-color4);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid-gap: 0px;*/
+}
+
+.grid-item-label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.grid-item {
+    text-align: left;
+    padding-left: 10px;
 }

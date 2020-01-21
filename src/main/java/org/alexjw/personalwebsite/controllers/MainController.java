@@ -43,7 +43,14 @@ public class MainController {
     @GetMapping("/salesforce")
     public RedirectView salesForce() {
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl("https://trailblazer.me/id/alexjw ");
+        redirectView.setUrl("https://trailblazer.me/id/alexjw");
+        return redirectView;
+    }
+
+    @GetMapping("/bitbucket")
+    public RedirectView bitBucket() {
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl("https://bitbucket.org/alexjw/");
         return redirectView;
     }
 
