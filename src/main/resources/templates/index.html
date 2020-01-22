@@ -14,11 +14,21 @@
     <!-- Font Awesome 5.12.0 -->
     <script src="https://kit.fontawesome.com/5ca357b3c0.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script>
+        var options = {
+            delay: 800,
+            duration: 1600
+        }
+    </script>
 
     <title>Index</title>
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm" id="navbar">
         <a class="navbar-brand" href="#">Personal Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,9 +67,15 @@
     <div class="container" id="welcome">
         <h1>Hello, I'm Alex</h1>
         <img src="images/profile.png" style="max-width: 400px; height: auto;" alt="Profile Picture">
+        <script>
+            ScrollReveal().reveal('img', {delay: 1800, duration: 1600, distance: '100px', origin: 'right'});
+        </script>
         <h2>Welcome to My Portfolio</h2>
         <p>I'm Glad to see you here, please scroll down to continue</p>
     </div>
+    <script>
+        ScrollReveal(options).reveal('.container', {distance: '60px'});
+    </script>
 
     <div class="container" id="overview">
         <h2 class="container-title">Brief Overview</h2>
@@ -78,6 +94,13 @@
 
 
 
+    <script>
+        options.rotate = {
+            x:40
+        };
+        ScrollReveal(options).reveal('.container');
+    </script>
+
     <div class="container" id="information">
         <h2 class="container-title">Information</h2>
 
@@ -91,6 +114,13 @@
             <label class="grid-item-label">Nationality:</label>
             <label class="grid-item">Paraguayan</label>
         </div>
+        <script>
+            options.rotate = {
+                x:30,
+                z:30
+            }
+            ScrollReveal(options).reveal('.container');
+        </script>
 
         <div id="social-container">
             <a href="/linkedin"class="profile-links" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in fa-3x" id="linkedInIcon"></i></a>
@@ -100,6 +130,13 @@
             <a href="/salesforce" class="profile-links" title="SalesForce" target="_blank"><i class="fab fa-salesforce fa-3x" id="salesForceIcon"></i></a>
             <a href="/bitbucket" class="profile-links" title="BitBucket" target="_blank"><i class="fab fa-bitbucket fa-3x" id="bitBucketIcon"></i></a>
         </div>
+        <script>
+            options.rotate = {
+                x:30,
+                y:60
+            }
+            ScrollReveal(options).reveal('.container');
+        </script>
 
     </div>
 
@@ -107,6 +144,18 @@
         <h2 class="container-title">Skills</h2>
 
     </div>
+    <script>
+        options.scale = 0.1;
+        ScrollReveal(options).reveal('.container');
+    </script>
+
+    <div class="container" id="undefined">
+        <h2 class="container-title">Skills</h2>
+
+    </div>
+    <script>
+        ScrollReveal(options).reveal('.container');
+    </script>
 
 </body>
 </html>

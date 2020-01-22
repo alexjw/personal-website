@@ -11,8 +11,9 @@
     --gradient1: #F7F7F2;
     --gradient2: #96BDC6;
     --gradient3: #B5D2CB;
-    --gradient4: #F4F1BB;
-    --gradient5: #BFD8BD;
+    --gradient4: #BFD8BD;
+    --gradient5: #F4F1BB;
+    --gradient6: #F8B091;
 
 
     --font-color1: #2A5547;
@@ -20,33 +21,34 @@
     --font-color3: #2A5547;
     --font-color4: #2A5547;
     --font-color5: #2A5547;
-
-
-    /*--gradient1: #F7F7F2;
-    --gradient2: #A1B0AB;
-    --gradient3: #929487;
-    --gradient4: #6B6054;
-    --gradient5: #252323;*/
+    --font-color6: #2A5547;
 }
 
 body {
     background-color: var(--main-bg-color);
     padding-top: 60px;
+    padding-bottom: 60px;
     font-family: "Raleway", sans-serif;
     color: var(--main-font-color);
 }
 
 .container {
     /*border: solid 1px red;*/
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     overflow: auto;
-    padding-top: 20px;
+    padding-top: 60px;
     /*background-color: var(--main-container-bg);*/
     /*margin-bottom: 20px;*/
 }
 
 .container-title {
     text-align: center;
+    border: 1px solid black;
+}
+
+.container p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 p {
@@ -124,6 +126,11 @@ h1, h2 {
 #skills {
     background: linear-gradient(0deg, var(--gradient5) 0%, var(--gradient4) 100%);
     color: var(--font-color4);
+}
+
+#undefined {
+    background: linear-gradient(0deg, var(--gradient6) 0%, var(--gradient5) 100%);
+    color: var(--font-color5);
 }
 
 .grid-container {
