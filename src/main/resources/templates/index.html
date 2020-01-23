@@ -25,6 +25,8 @@
         }
     </script>
 
+    <meta name="viewport" content="width=480, user-scalabe=0;">
+
     <title>Index</title>
 </head>
 <body>
@@ -80,14 +82,14 @@
     <div class="container" id="overview">
         <h2 class="container-title">Brief Overview</h2>
         <p>My name is Alex Jiñes, I'm 24 years old software developer based in Encarnación/Paraguay.</p>
-        <br>
+        <div style="height: 8vh;"></div>
         <h3>Story</h3>
         <p>I am one of the 2 students that finished the subjects of the career in the normal time, of 23 entrants to the career in my promotion.</p>
         <p>I learned about financial software in my first job, on a credit company, work on a team and being team leader for a short period.</p>
         <p>Then I learned to make software for businesses, to deal with and negotiate with clients about their needs and provide them with an effective solution to their problems.</p>
         <p>In that time I started a entrepreneurship, and I learned about sales and advertising on Facebook.</p>
         <p>Currently in the process of making the Final Degree Project, also learning the web technologies, and seeking new projects and opportunities.</p>
-        <br>
+        <div style="height: 8vh;"></div>
         <h3>Other things about me</h3>
         <p>I love the java language, very experienced in desktop side of java, but in good knowledge of the web applications.</p>
         <p>I prefer the backend rather than frontend.</p>
@@ -105,7 +107,7 @@
     <div class="container" id="information">
         <h2 class="container-title">Information</h2>
 
-        <div class="grid-container">
+        <div id="grid-container">
             <label class="grid-item-label">Name:</label>
             <label class="grid-item">Abel Alexander Jiñes Waszaj</label>
             <label class="grid-item-label">Nationality:</label>
@@ -121,13 +123,15 @@
             ScrollReveal(options).reveal('.container');
         </script>
 
-        <div id="social-container">
-            <a href="/linkedin"class="profile-links" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in fa-3x" id="linkedInIcon"></i></a>
-            <a href="/github" class="profile-links" title="GitHub" target="_blank"><i class="fab fa-github fa-3x" id="gitHubIcon"></i></a>
-            <a href="/codepen" class="profile-links" title="CodePen" target="_blank"><i class="fab fa-codepen fa-3x" id="codePenIcon"></i></a>
-            <a href="/glitch" class="profile-links" title="Glitch" target="_blank"><i class="fa fa-fish fa-3x" id="glitchIcon"></i></a>
-            <a href="/salesforce" class="profile-links" title="SalesForce" target="_blank"><i class="fab fa-salesforce fa-3x" id="salesForceIcon"></i></a>
-            <a href="/bitbucket" class="profile-links" title="BitBucket" target="_blank"><i class="fab fa-bitbucket fa-3x" id="bitBucketIcon"></i></a>
+        <div style="height: 4vh"></div>
+        <h3 style="text-align: center;">Profiles</h3>
+        <div id="social-container" class="row">
+                <a href="/linkedin"class="profile-links" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in fa-3x" id="linkedInIcon"></i></a>
+                <a href="/github" class="profile-links" title="GitHub" target="_blank"><i class="fab fa-github fa-3x" id="gitHubIcon"></i></a>
+                <a href="/codepen" class="profile-links" title="CodePen" target="_blank"><i class="fab fa-codepen fa-3x" id="codePenIcon"></i></a>
+                <a href="/glitch" class="profile-links" title="Glitch" target="_blank"><i class="fa fa-fish fa-3x" id="glitchIcon"></i></a>
+                <a href="/salesforce" class="profile-links" title="SalesForce" target="_blank"><i class="fab fa-salesforce fa-3x" id="salesForceIcon"></i></a>
+                <a href="/bitbucket" class="profile-links" title="BitBucket" target="_blank"><i class="fab fa-bitbucket fa-3x" id="bitBucketIcon"></i></a>
         </div>
         <script>
             ScrollReveal(options).reveal('.container');
@@ -138,10 +142,9 @@
     <div class="container" id="skills">
         <h2 class="container-title">Skills</h2>
         <h3>Main Languages</h3>
-        <br>
-        <div class="row">
+        <div class="row" id="main-languages-container">
             <div class="col-md-12">
-            <label>Java</label>
+                <label>Java</label>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
                 </div>
@@ -149,19 +152,19 @@
             <div class="col-md-6">
                 <label>JavaScript</label>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <label>Ruby on Rails</label>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <label>HTML</label>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -171,7 +174,7 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <br>
         <h3>Technologies, Frameworks and Tools</h3>
         <div id="tech-container">
             <img src="/images/git.png" class="tech-image" title="Git" alt="Git">
@@ -189,13 +192,6 @@
             <img src="/images/jaspersoft.png" class="tech-image" title="Jasper Reports" alt="Jasper Reports">
             <img src="/images/Boostrap.svg" class="tech-image" title="Bootstrap" alt="Bootstrap">
         </div>
-    </div>
-    <script>
-        ScrollReveal(options).reveal('.container');
-    </script>
-
-    <div class="container" id="undefined">
-        <h2 class="container-title">Skills</h2>
     </div>
     <script>
         ScrollReveal(options).reveal('.container');

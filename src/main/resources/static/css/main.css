@@ -38,14 +38,11 @@ body {
 }
 
 .container {
-    /*border: solid 1px red;*/
     height: calc(100vh);
     overflow: auto;
     padding-top: 60px;
     padding-left: 25px;
     padding-right: 25px;
-    /*background-color: var(--main-container-bg);*/
-    /*margin-bottom: 20px;*/
 }
 
 .container-title {
@@ -58,10 +55,6 @@ body {
     margin-bottom: 4px;
 }
 
-p {
-    /*color: var(--main-font-color);*/
-}
-
 #welcome {
     text-align: center;
 }
@@ -69,6 +62,7 @@ p {
 h1, h2, h3 {
     font-family: Helvetica;
     font-weight: bold;
+    color: var(--main-bg-color);
 }
 
 h1 {
@@ -81,6 +75,10 @@ h1 {
     height: 60px;
     width: 74px;
     text-align:center;
+}
+
+.profile-links {
+    margin: 20px 20px 0px 20px;
 }
 
 #linkedInIcon {
@@ -117,7 +115,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 #welcome {
@@ -145,10 +143,10 @@ h1 {
     color: var(--font-color5);
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    /*grid-gap: 0px;*/
+    height: 30vh;
 }
 
 .grid-item-label {
@@ -163,16 +161,22 @@ h1 {
 }
 
 .tech-image {
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #tech-container {
 
 }
 
+#main-languages-container {
+    height: 35vh;
+}
+
 #skills label {
     font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 6px;
 }
