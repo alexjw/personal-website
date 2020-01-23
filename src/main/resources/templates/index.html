@@ -65,7 +65,7 @@
     </nav>
 
     <div class="container" id="welcome">
-        <h1>Hello, I'm Alex</h1>
+        <h1>Hello, I'm <span id="title-name">Alex</span></h1>
         <img src="images/profile.png" style="max-width: 400px; height: auto;" alt="Profile Picture">
         <script>
             ScrollReveal().reveal('img', {delay: 1800, duration: 1600, distance: '100px', origin: 'right'});
@@ -95,8 +95,6 @@
         <p>I learn fast and I'm perfectionist, I like to do everything the best way possible.</p>
     </div>
 
-
-
     <script>
         options.rotate = {
             y:60
@@ -110,12 +108,14 @@
         <div class="grid-container">
             <label class="grid-item-label">Name:</label>
             <label class="grid-item">Abel Alexander Jiñes Waszaj</label>
-            <label class="grid-item-label">Date of Birth:</label>
-            <label class="grid-item">06/03/1995</label>
-            <label class="grid-item-label">Phone:</label>
-            <label class="grid-item">+595 985 833038</label>
             <label class="grid-item-label">Nationality:</label>
             <label class="grid-item">Paraguayan</label>
+            <label class="grid-item-label">Date of Birth:</label>
+            <label class="grid-item">06/03/1995 (24 years)</label>
+            <label class="grid-item-label">Phone/WhatsApp:</label>
+            <a class="grid-item" href="https://wa.me/595985833038" target="_blank">+595 985 833038</a>
+            <label class="grid-item-label">Email:</label>
+            <a class="grid-item" href="mailto:abel.oalex@gmail.com" target="_blank">abel.oalex@gmail.com</a>
         </div>
         <script>
             ScrollReveal(options).reveal('.container');
@@ -138,6 +138,7 @@
     <div class="container" id="skills">
         <h2 class="container-title">Skills</h2>
         <h3>Main Languages</h3>
+        <br>
         <div class="row">
             <div class="col-md-12">
             <label>Java</label>
@@ -170,20 +171,24 @@
                 </div>
             </div>
         </div>
-        <h3>Technologies and Frameworks</h3>
-        <img src="/images/git.png" class="tech-image" title="Git" alt="Git">
-        <img src="/images/sass.png" class="tech-image" title="Sass" alt="Sass">
-        <img src="/images/spring.png" class="tech-image" title="Spring" alt="Spring">
-        <img src="/images/vue.png" class="tech-image" title="Vue" alt="Vue">
-        <img src="/images/react.png" class="tech-image" title="React" alt="React">
-        <img src="/images/postgresql.png" class="tech-image" title="Postgres SQL" alt="Postgres SQL">
-        <img src="/images/activejdbc.png" class="tech-image" title="ActiveJDBC" alt="ActiveJDBC">
-        <img src="/images/javaFX.png" class="tech-image" title="JavaFX" alt="JavaFX">
-        <img src="/images/d3js.png" class="tech-image" title="D3js" alt="D3js">
-        <img src="/images/jquery.png" class="tech-image" title="JQuery" alt="JQuery">
-        <img src="/images/hibernate.png" class="tech-image" title="Hibernate" alt="Hibernate">
-        <img src="/images/salesforce.png" class="tech-image" title="SalesForce" alt="SalesForce">
-        <img src="/images/jaspersoft.png" class="tech-image" title="Jasper Reports" alt="Jasper Reports">
+        <br><br>
+        <h3>Technologies, Frameworks and Tools</h3>
+        <div id="tech-container">
+            <img src="/images/git.png" class="tech-image" title="Git" alt="Git">
+            <img src="/images/sass.png" class="tech-image" title="Sass" alt="Sass">
+            <img src="/images/spring.png" class="tech-image" title="Spring" alt="Spring">
+            <img src="/images/vue.png" class="tech-image" title="Vue" alt="Vue">
+            <img src="/images/react.png" class="tech-image" title="React" alt="React">
+            <img src="/images/postgresql.png" class="tech-image" title="Postgres SQL" alt="Postgres SQL">
+            <img src="/images/activejdbc.png" class="tech-image" title="ActiveJDBC" alt="ActiveJDBC">
+            <img src="/images/javaFX.png" class="tech-image" title="JavaFX" alt="JavaFX">
+            <img src="/images/d3js.png" class="tech-image" title="D3js" alt="D3js">
+            <img src="/images/jquery.png" class="tech-image" title="JQuery" alt="JQuery">
+            <img src="/images/hibernate.png" class="tech-image" title="Hibernate" alt="Hibernate">
+            <img src="/images/salesforce.png" class="tech-image" title="SalesForce" alt="SalesForce">
+            <img src="/images/jaspersoft.png" class="tech-image" title="Jasper Reports" alt="Jasper Reports">
+            <img src="/images/Boostrap.svg" class="tech-image" title="Bootstrap" alt="Bootstrap">
+        </div>
     </div>
     <script>
         ScrollReveal(options).reveal('.container');
