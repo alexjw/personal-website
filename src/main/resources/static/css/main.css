@@ -81,9 +81,18 @@ h1 {
     margin: 20px 20px 0px 20px;
 }
 
+.profile-icons {
+    transition: all 0.5s;
+}
+
 #linkedInIcon {
     border: 2px solid var(--linkedin-color);
     color: var(--linkedin-color);
+}
+
+#linkedInIcon:hover {
+    background-color: var(--linkedin-color);
+    color: white;
 }
 
 #gitHubIcon {
@@ -91,9 +100,19 @@ h1 {
     color: var(--github-color);
 }
 
+#gitHubIcon:hover {
+    background-color: var(--github-color);
+    color: white;
+}
+
 #codePenIcon {
     border: 2px solid var(--codepen-color);
     color: var(--codepen-color);
+}
+
+#codePenIcon:hover {
+    background-color: var(--codepen-color);
+    color: white;
 }
 
 #glitchIcon {
@@ -101,14 +120,29 @@ h1 {
     color: var(--glitch-color);
 }
 
+#glitchIcon:hover {
+    background-color: var(--glitch-color);
+    color: white;
+}
+
 #salesForceIcon {
     border: 2px solid var(--salesforce-color);
     color: var(--salesforce-color);
 }
 
+#salesForceIcon:hover {
+    background-color: var(--salesforce-color);
+    color: white;
+}
+
 #bitBucketIcon {
     border: 2px solid var(--bitbucket-color);
     color: var(--bitbucket-color);
+}
+
+#bitBucketIcon:hover {
+    background-color: var(--bitbucket-color);
+    color: white;
 }
 
 #social-container {
@@ -138,9 +172,10 @@ h1 {
     color: var(--font-color4);
 }
 
-#undefined {
+#education {
     background: linear-gradient(0deg, var(--gradient6) 0%, var(--gradient5) 100%);
     color: var(--font-color5);
+    height: auto;
 }
 
 #grid-container {
