@@ -15,6 +15,7 @@
     --gradient4: #BFD8BD;
     --gradient5: #F4F1BB;
     --gradient6: #F8B091;
+    --footer-bg: #343a40;
 
 
     --font-color1: #23463B;
@@ -23,12 +24,15 @@
     --font-color4: #23463B;
     --font-color5: #23463B;
     --font-color6: #23463B;
+    --font-color-footer: white;
 }
 
 body {
     background-color: var(--main-bg-color);
+    background-image: url("fabric-of-squares.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     padding-top: 60px;
-    padding-bottom: 60px;
+    #padding-bottom: 60px;
     font-family: "Raleway", sans-serif;
     color: var(--main-font-color);
 }
@@ -59,7 +63,7 @@ body {
     text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: Helvetica;
     font-weight: bold;
     color: var(--main-bg-color);
@@ -214,4 +218,29 @@ h1 {
     font-size: 22px;
     margin-bottom: 0px;
     margin-top: 6px;
+}
+
+.timeline-item p {
+     margin-top: .5rem;
+ }
+
+.timeline-item h3, h4, h5 {
+    font-weight: normal;
+    margin-bottom: 0;
+ }
+
+footer {
+    margin-top: 20px;
+    height: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+footer .container {
+    background-color: var(--footer-bg);
+    color: var(--font-color-footer);
+    height: 100%;
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
