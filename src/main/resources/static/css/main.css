@@ -10,11 +10,12 @@
     --salesforce-color: #1798c1;
     --bitbucket-color: #205081;
     --gradient1: #F7F7F2;
-    --gradient2: #96BDC6;
+    --gradient2: #9FBFC6;
     --gradient3: #B5D2CB;
-    --gradient4: #BFD8BD;
-    --gradient5: #F4F1BB;
-    --gradient6: #F8B091;
+    --gradient4: #BFE1BD;
+    --gradient5: #D9F4C7;
+    --gradient6: #ECF4CD;
+    --gradient7: #F9F8F8;
     --footer-bg: #343a40;
 
 
@@ -30,7 +31,6 @@
 body {
     background-color: var(--main-bg-color);
     background-image: url("fabric-of-squares.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     padding-top: 60px;
     #padding-bottom: 60px;
     font-family: "Raleway", sans-serif;
@@ -153,7 +153,6 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*margin-top: 40px;*/
 }
 
 #welcome {
@@ -180,6 +179,12 @@ h1 {
     background: linear-gradient(0deg, var(--gradient6) 0%, var(--gradient5) 100%);
     color: var(--font-color5);
     height: auto;
+    padding-bottom: 20px;
+}
+
+#end {
+    background: linear-gradient(0deg, var(--gradient7) 0%, var(--gradient6) 100%);
+    color: var(--font-color6);
 }
 
 #grid-container {
@@ -206,10 +211,6 @@ h1 {
     margin-left: 5px;
 }
 
-#tech-container {
-
-}
-
 #main-languages-container {
     height: 35vh;
 }
@@ -218,6 +219,16 @@ h1 {
     font-size: 22px;
     margin-bottom: 0px;
     margin-top: 6px;
+}
+
+
+#end p {
+    margin-bottom: 10vh;
+    font-size: 18px;
+}
+
+#end p .h3 {
+    color: var(--main-bg-color);
 }
 
 .timeline-item p {
@@ -232,8 +243,6 @@ h1 {
 footer {
     margin-top: 20px;
     height: 60px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 footer .container {
